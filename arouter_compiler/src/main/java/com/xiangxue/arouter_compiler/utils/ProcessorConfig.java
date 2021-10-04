@@ -45,7 +45,6 @@ public interface ProcessorConfig {
 
 
 
-
     // @Parameter注解 的 包名 + 类名
     String PARAMETER_PACKAGE = "com.xiangxue.arouter_annotation.Parameter";
 

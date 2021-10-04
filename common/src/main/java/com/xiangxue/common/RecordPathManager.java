@@ -9,6 +9,8 @@ import java.util.Map;
 
 /**
  * 全局路径记录器（根据子模块分组）
+ *
+ * 5种方式通信 之一 全局map  已经废除了
  */
 public class RecordPathManager {
 

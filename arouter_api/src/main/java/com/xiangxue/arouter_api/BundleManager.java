@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 /**
  * 跳转时 ，用于参数的传递
@@ -39,8 +40,6 @@ public class BundleManager {
         this.bundle = bundle;
         return this;
     }
-
-    // Derry只写到了这里，同学们可以自己增加 ...
 
     // 直接完成跳转
     public Object navigation(Context context) {

@@ -1,4 +1,4 @@
-package com.example.modularcustomarouter;
+package com.xiangxue.new_modular_customarouter;
 
 import org.junit.Test;
 

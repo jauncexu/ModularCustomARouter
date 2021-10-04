@@ -138,7 +138,7 @@ public class RouterManager {
                             intent.putExtras(bundleManager.getBundle()); // 携带参数
                             context.startActivity(intent, bundleManager.getBundle());
                             break;
-                        //同学们可以自己扩展 类型
+                        // 可以自己扩展 类型
                     }
                 }
             }

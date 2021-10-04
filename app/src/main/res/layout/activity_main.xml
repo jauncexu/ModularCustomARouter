@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv"
@@ -15,24 +14,20 @@
         android:text="App首页"
         android:textColor="@android:color/black"
         android:textSize="30sp"
-        android:layout_gravity="center"
-         />
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="jumpOrder"
-        android:text="订单"
-        android:layout_gravity="center"
-        android:layout_marginTop="88dp"
-         />
+        android:text="订单-Order"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="jumpPersonal"
-        android:text="我的"
-        android:layout_gravity="center"
+        android:text="我的-Personal"
         />
 
 </LinearLayout>

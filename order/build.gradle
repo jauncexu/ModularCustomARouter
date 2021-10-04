@@ -29,6 +29,7 @@ android {
         // 同学们注意：切记：必须写在defaultConfig节点下
         javaCompileOptions {
             annotationProcessorOptions {
+                // project.getName() == order
                 // this.project.getName() == order
                 // this.getProject().getName() == order
                 arguments = [moduleName: project.getName(), packageNameForAPT: packageNameForAPT]
@@ -83,6 +84,7 @@ dependencies {
     // 注解模块
     implementation project(":arouter_annotation")
 
+    // 使用注解处理器
     // 注解处理器
     annotationProcessor project(':arouter_compiler')
 }
