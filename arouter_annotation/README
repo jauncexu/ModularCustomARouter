@@ -1,0 +1,12 @@
+动态生成懒加载参数接收
+
+
+1. arouter_annotation 添加注解Parameter
+2. arouter_api ParameterGet 标准规则的定义
+3. arouter_compiler  ParameterProcessor 注解处理器生成分析的模板代码
+4. arouter_api  ParameterManager 参数管理器的编写
+
+
+
+
+Parameter 是为了模仿butterKnife 自动生成注解

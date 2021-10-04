@@ -1,0 +1,40 @@
+在ARouterProcessor自动生成以下代码
+
+\personal\build\generated\ap_generated_sources\debug\out\com\xiangxue\new_modular_customarouter\ARouter$$Group$$personal.java
+Group
+public class ARouter$$Group$$personal implements ARouterGroup {
+  @Override
+  public Map<String, Class<? extends ARouterPath>> getGroupMap() {
+    Map<String, Class<? extends ARouterPath>> groupMap = new HashMap<>();
+    groupMap.put("personal", ARouter$$Path$$personal.class);
+    return groupMap;
+  }
+}
+
+
+\personal\build\generated\ap_generated_sources\debug\out\com\xiangxue\new_modular_customarouter\ARouter$$Path$$personal.java
+Path
+public class ARouter$$Path$$personal implements ARouterPath {
+  @Override
+  public Map<String, RouterBean> getPathMap() {
+    Map<String, RouterBean> pathMap = new HashMap<>();
+    pathMap.put("/personal/Personal_Main2Activity", RouterBean.create(RouterBean.TypeEnum.ACTIVITY, Personal_Main2Activity.class, "/personal/Personal_Main2Activity", "personal"));
+    pathMap.put("/personal/Personal_MainActivity", RouterBean.create(RouterBean.TypeEnum.ACTIVITY, Personal_MainActivity.class, "/personal/Personal_MainActivity", "personal"));
+    return pathMap;
+  }
+}
+
+
+
+
+ParameterProcessor.java为了自动生成以下代码
+public class Personal_MainActivity$$Parameter implement ParameterGet{
+    @Override
+    public void getParameter(Object targetParameter) {
+          Personal_MainActivity t = (Personal_MainActivity) targetParameter;
+          // 难点
+          t.name = t.getIntent().getStringExtra("name",default);
+          t.sex = t.getIntent().getStringExtra("sex",t.sex);
+          t.age = t.getIntent().getStringExtra("age",t.age);
+    }
+}
