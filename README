@@ -1,6 +1,5 @@
 这是一个组件化中  自定义ARouter的项目
 
-
 在ARouterProcessor自动生成以下代码
 
 \personal\build\generated\ap_generated_sources\debug\out\com\xiangxue\new_modular_customarouter\ARouter$$Group$$personal.java
@@ -38,3 +37,20 @@ public class Personal_MainActivity$$Parameter implements ParameterGet {
     t.age = t.getIntent().getIntExtra("age", t.age);
   }
 }
+
+组件化之 动态生成懒加载参数接收思路:
+1.arouter_annotation 添加注解Parameter
+2.arouter_api ParameterGet标准规则的定义
+3.arouter_compiler ParameterProcessor 注解处理器生成刚刚分析的模块代码
+4.arouter_api ParameterManager参数管理器的编写
+
+
+组件化之路由图片通信 的思路：
+1.arouter_api Call 标准规则的定义
+2.common OrderDrawable 集成Call order组图片标准规则的定义
+3.order OrderDrawableImp 最终的实现交给具体模块order
+4.arouter_compiler ARouterProcessor 修改代码
+5.app MainActivity使用图片到ImageView
+6.arouter_compiler ParameterProcessor / ParameterFactory修改代码
+7.arouter_api RouterManager / BundleManager 修改代码
+
